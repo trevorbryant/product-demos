@@ -4,7 +4,7 @@
   gather_facts: false
 
   vars:
-    file_path: "/var/www/html/openscap/"
+    file_path: "/tmp/"
     ssg_schema: "/usr/share/xml/scap/ssg/content/ssg-rhel8-ds.xml"
 
   tasks:
