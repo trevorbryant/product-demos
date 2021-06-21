@@ -1,6 +1,6 @@
 ---
 - name: build openscap report for rhel8
-  hosts: web
+  hosts: all
   gather_facts: false
 
   vars:
