@@ -20,7 +20,7 @@
         path: "{{ssg_schema}}"
 
     - name: create HTML report
-      command: "oscap xccdf eval --profile --remediate xccdf_org.ssgproject.content_profile_stig --fetch-remote-resources --results /tmp/report.xml --report /tmp/index.html {{ssg_schema}}"
+      command: "oscap xccdf eval --profile --remediate xccdf_org.ssgproject.content_profile_stig --fetch-remote-resources --results report.xml --report index.html {{ssg_schema}}"
       register: command_result
       failed_when: "'Error' in command_result.stderr"
 
